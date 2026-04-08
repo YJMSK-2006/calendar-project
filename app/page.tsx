@@ -39,7 +39,7 @@ export default function PremiumCalendar() {
     1
   ).getDay();
 
-  const handleClick = (day) => {
+  const handleClick = (day: number) => {
     const selected = new Date(
       currentDate.getFullYear(),
       currentDate.getMonth(),
@@ -61,7 +61,7 @@ export default function PremiumCalendar() {
     }
   };
 
-  const isBetween = (day) => {
+  const isBetween = (day: number) => {
     const d = new Date(
       currentDate.getFullYear(),
       currentDate.getMonth(),
